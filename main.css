@@ -1,0 +1,116 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+nav {
+  width: 100%;
+  display: inline-flex;
+  align-items: center;
+  background-color: #000;
+}
+
+nav .logo {
+  display: inline-flex;
+  justify-content: flex-start;
+  width: 5%;
+  padding: 3px 10px;
+}
+
+nav ul {
+  display: inline-flex;
+  justify-content: flex-end;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li {
+  list-style: none;
+  position: relative;
+  padding: 1.2rem 0;
+  transition: 0.5s;
+  box-sizing: border-box;
+  border-right: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+nav ul li:last-child {
+  border-right: none;
+}
+
+nav ul li:hover {
+  background: #2196f3;
+}
+
+nav ul li:hover ul {
+  opacity: 1;
+  visibility: visible;
+}
+
+nav ul li ul {
+  position: absolute;
+  top: 3.5rem;
+  background: #000;
+  display: block;
+  width: 10rem;
+  text-align: left;
+  transition: 0.5s;
+  opacity: 0;
+  visibility: hidden;
+}
+
+nav ul li ul li {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+nav ul li a {
+  text-decoration: none;
+  text-align: center;
+  padding: 0 1.1rem;
+  color: #fff;
+}
+
+nav .but1 {
+  align-items: center;
+  padding: 0 30px 0 5px;
+  border: none;
+}
+
+nav .but1 .but-link {
+  border: none;
+  margin: 0;
+  text-align: center;
+  background: #66b266;
+  color: black;
+  font-family: 'PT Sans', sans-serif;
+  font-size: .8rem;
+  padding: 10px 20px;
+  text-transform: uppercase;
+  border-radius: 8px;
+  display: block ruby;
+  transition: all 0.3s ease 0s;
+  text-decoration: none;
+}
+
+nav .but1 .but-link:hover {
+  color: #fff;
+  font-weight: 700;
+  letter-spacing: 3px;
+  background: #329932;
+  box-shadow: 0px 5px 40px -10px rgba(255, 255, 255, 0.57);
+  transition: all 0.3s ease 0s;
+}
+
+@media (max-width: 768px) {
+  nav ul {
+    display: block;
+  }
+  nav ul li {
+    display: block;
+  }
+  nav ul li ul {
+    width: 100%;
+    z-index: 1;
+  }
+}
