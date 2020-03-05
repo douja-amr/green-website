@@ -4,11 +4,14 @@
 <head>
 
   <meta charset="utf-8">
+  <link rel="shortcut icon" type="image/x-icon" href="image/file2222.png">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel='stylesheet' href='https://cdn.rawgit.com/noelboss/featherlight/1.3.2/release/featherlight.min.css'>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="main.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
   <script src="script.js" defer></script>
@@ -23,10 +26,10 @@
     <article class="infor">
       <ul>
         <li>
-          <i class="fa fa-mobile"></i><span>+1123456789</span>
+          <i class="material-icons">phone_in_talk</i><span>+1123456789</span>
         </li>
         <li>
-          <i class="fa fa-envelope"></i><span>exemple@exemple.com</span>
+          <i class="material-icons">mail_outline</i><span>exemple@exemple.com</span>
         </li>
       </ul>
     </article>
@@ -42,16 +45,33 @@
       </a>
     </article>
     <article class="botn">
-      <button class="btn" type="button" name="button">Donate Now</button>
+      <button class="btn" type="button" name="button" data-featherlight="#form">Donate Now</button>
     </article>
   </div>
+
   <!---end of info section--->
+  <!---start of donation section--->
+
+  <div id="intro">
+    <!-- <h3>Donate via Credit Card</h3> -->
+    <!-- <a href="#" class="btn btn-primary" data-featherlight="#form">Donate</a> -->
+    <!-- </hr> -->
+    <!-- <h3>Donate via Paypal</h3> -->
+    <!-- <script src="https://www.paypalobjects.com/js/external/paypal-button.min.js?merchant=YOUR_MERCHANT_ID" data-button="donate" data-amount="1.00" async></script> -->
+    <div id="hidden-element">
+      <div id="form">
+        <script src="https://cdn.donately.com/dntly-core/1.4/core.min.js" data-donately-id="act_ba7d12ab27bb" data-stripe-publishable-key="pk_test_rf2QE7E6grzUBoQfN8OppOpy"></script>
+      </div>
+    </div>
+  </div>
+
+  <!---end of donation section--->
 
   <!-- Navigation bar here -->
 
   <!---start of navbar--->
-  <nav class="navbar navbar-expand-md navbar-dark bg-dark">
-    <img class="logo" src="image/file222.png" alt="logo">
+  <nav class="navbar navbar-expand-md ">
+    <img class="logo" src="image/logo21.png" alt="logo">
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent">
       <span class="navbar-toggler-icon"></span>
     </button>
@@ -96,37 +116,6 @@
   <!---end of info navbar--->
 
   <!-- Header here / first Section  -->
-
-  <header class=intro>
-    <div class=header-intro>
-
-      <div class=slideshow>
-        <img src="image/ok.jpg" alt="" style="width: 100%; height: 100vh;">
-        <div class=div1>
-          <h1>let's go</h1>
-          <p>this is the one</p>
-        </div>
-      </div>
-      <div class=slideshow>
-        <img src="image/2.jpg" alt="" style="width: 100%; height: 100vh;">
-        <div class=div1>
-          <h1>ok</h1>
-          <p>no this is best</p>
-        </div>
-      </div>
-      <div class=slideshow>
-        <img src="image/3.jpg" alt="" style="width: 100%; height: 100vh;">
-        <div class=div1>
-          <h1>no</h1>
-          <p>but now is better</p>
-        </div>
-      </div>
-  </header>
-  <section>
-    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Neque repellendus beatae recusandae? Cupiditate debitis ratione doloribus quas sequi repudiandae fuga ex explicabo facilis, assumenda nam voluptatibus labore! Vitae, asperiores earum!
-    </p>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis sunt praesentium amet itaque, laudantium cum doloribus fugit? Quisquam nulla excepturi quo cum doloremque, officiis laudantium earum unde dolor deleniti qui.</p>
-  </section>
 
 
 
@@ -174,7 +163,8 @@
 
 
 
-
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+  <script src='https://cdn.rawgit.com/noelboss/featherlight/1.3.2/release/featherlight.min.js'></script>
 </body>
 
 

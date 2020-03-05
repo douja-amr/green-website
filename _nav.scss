@@ -1,8 +1,8 @@
-// *{
-//   margin: 0;
-//   padding: 0;
-// }
-//
+*{
+  margin: 0;
+  padding: 0;
+}
+
 // body{
 //   width: 100%;
 //   margin: 0;
@@ -15,23 +15,26 @@
   grid-template-rows: 1fr;
   align-items: center;
   width: 100%;
-  height: 50px;
+  height: 70px;
+  background-color: #f7f7f7;
   ul{
     display: inline-flex;
     align-items: center;
     margin: 0;
     padding: 0;
     li{
+      display: flex;
       list-style: none;
       align-items: center;
       i{
         padding: 0 0 0 1.1rem;
-        color: lightgreen;
-        font-size: 1.4rem;
+        color: #95C645;
+        font-size: 1.5rem;
+        margin: 0;
       }
-        span{
-          padding: 0 0 0 1.1rem;
-          color: #000;
+      span{
+          padding: 0 0 0 1rem;
+          color: #9b9da0;
         }
       }
     }
@@ -44,8 +47,8 @@
         padding: 0 .6rem 0 .6rem;
         float: right;
       i{
-        color: lightgreen;
-        font-size: 1.4rem;
+        color: #999999;
+        font-size: 1.1rem;
       }
     }
   }
@@ -69,17 +72,38 @@
     }
 }
 /*-----end of info section-----*/
+/*-----start of donation section-----*/
+
+#form {
+  width:100%;
+  height:650px;
+}
+#hidden-element {
+  display:none;
+}
+
+/*-----end of donation section-----*/
 /*-----start of navbar-----*/
 nav{
+  height: 90px;
+
   .logo{
     display: inline-flex;
-    width: 50px;
+    width: 200px;
   }
   div{
     ul{
       li{
           list-style: none;
-          padding: 0 .2rem;
+          padding-right: 2rem;
+          a{
+            text-transform: uppercase;
+            font-weight: 600;
+            color: #000;
+            &:hover{
+              color: #8DC63F;
+            }
+          }
           ul{
             position: absolute;
             opacity: 0;
@@ -93,8 +117,19 @@ nav{
           &:hover ul{
             opacity: 1;
             visibility: visible;
-            background-color: #343A40;
+            background-color: #fff;
           }
+      }
+    }
+    input[type=Search]{
+      border: 2px solid #8DC63F;
+    }
+    .btn{
+      border: 2px solid #8DC63F;
+      &:hover{
+        background-color: #8DC63F;
+        border: 2px solid #12345678;
+        color: #fff;
       }
     }
   }
@@ -270,7 +305,7 @@ nav{
   background: url("image/newsletter-bg.jpg");
   background-size: cover;
   background-repeat: no-repeat;
-  height: 33vh;
+  height: 40vh;
   position: relative;
   .formule{
     display: flex;
@@ -281,11 +316,12 @@ nav{
   }
   .mail{
     width: 30rem;
-    padding: 15px 0;
+    padding: 15px 0 15px 15px;
     font-size: 16px;
     margin-right: 10px;
     border: none;
     border-radius: 3px;
+
   }
   .sub{
     width: 7rem;
