@@ -85,20 +85,24 @@
 /*-----end of donation section-----*/
 /*-----start of navbar-----*/
 nav{
-  height: 90px;
+  padding: 1rem;
 
   .logo{
     display: inline-flex;
-    width: 200px;
+    width: 170px;
   }
-  div{
-    ul{
-      li{
+  .collapse{
+    justify-content: flex-end;
+    .navbar-nav{
+      .nav-item{
           list-style: none;
-          padding-right: 2rem;
-          a{
+          padding-left: 1rem;
+          &:first-child{
+            padding-left: .6rem;
+          }
+          .nav-link{
             text-transform: uppercase;
-            font-weight: 600;
+            font-weight: 500;
             color: #000;
             &:hover{
               color: #8DC63F;
@@ -108,9 +112,12 @@ nav{
             position: absolute;
             opacity: 0;
             visibility: hidden;
-            z-index: 999;
+            z-index: 9999;
             li{
               border-bottom: 1px solid rgba(255,255,255,.2);
+              list-style: none;
+              // border-bottom: 1px solid #8DC63F;
+              border-left: 3px solid #8DC63F;
             }
 
           }
@@ -118,11 +125,13 @@ nav{
             opacity: 1;
             visibility: visible;
             background-color: #fff;
+
           }
       }
     }
     input[type=Search]{
       border: 2px solid #8DC63F;
+      width: 10rem;
     }
     .btn{
       border: 2px solid #8DC63F;
@@ -141,6 +150,7 @@ nav{
     .infor{
       display: inline-block;
       justify-content: center;
+      align-items: center;
       li{
         display: inline-flex;
         justify-content: center;
@@ -150,7 +160,18 @@ nav{
       display: inline-flex;
       margin: 0 0 0 5.1rem;
       justify-content: center;
+      vertical-align: middle;
     }
+   }
+   nav{
+   .logo{
+     width: 130px;
+     }
+     .collapse{
+     input[type=Search]{
+       width: 7rem;
+       }
+     }
    }
 }
 
@@ -159,16 +180,18 @@ nav{
 
   .info-sect{
     display: inline-block;
+    height: auto;
     text-align: center;
     .infor{
       display: inline-block;
     }
     .media{
-      margin: .7rem 0;
+      margin: 0 0 .7rem 0;
       float: none;
+      vertical-align: middle;
     }
     .btn{
-      margin: 0 0 1.5rem 0;
+      margin: 0 0 .7rem 0;
       float: none;
     }
   }
@@ -305,6 +328,8 @@ nav{
   background: url("image/newsletter-bg.jpg");
   background-size: cover;
   background-repeat: no-repeat;
+  background-position: center center;
+  width: 100vw;
   height: 40vh;
   position: relative;
   .formule{
@@ -330,6 +355,20 @@ nav{
     background-color: #5DC269;
     border: none;
     border-radius: 3px;
+  }
+}
+
+@media (max-width: 768px){
+  .nltr{
+
+    .mail{
+      width: 20rem;
+    }
+    .sub{
+      width: 5rem;
+      padding: 20px 0;
+      font-size: 12px;
+    }
   }
 }
 /*-----end of Newslatters section-----*/

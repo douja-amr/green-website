@@ -85,55 +85,66 @@
 /*-----end of donation section-----*/
 /*-----start of navbar-----*/
 nav {
-  height: 90px;
+  padding: 1rem;
 }
 
 nav .logo {
   display: inline-flex;
-  width: 200px;
+  width: 170px;
 }
 
-nav div ul li {
+nav .collapse {
+  justify-content: flex-end;
+}
+
+nav .collapse .navbar-nav .nav-item {
   list-style: none;
-  padding-right: 2rem;
+  padding-left: 1rem;
 }
 
-nav div ul li a {
+nav .collapse .navbar-nav .nav-item:first-child {
+  padding-left: .6rem;
+}
+
+nav .collapse .navbar-nav .nav-item .nav-link {
   text-transform: uppercase;
-  font-weight: 600;
+  font-weight: 500;
   color: #000;
 }
 
-nav div ul li a:hover {
+nav .collapse .navbar-nav .nav-item .nav-link:hover {
   color: #8DC63F;
 }
 
-nav div ul li ul {
+nav .collapse .navbar-nav .nav-item ul {
   position: absolute;
   opacity: 0;
   visibility: hidden;
-  z-index: 999;
+  z-index: 9999;
 }
 
-nav div ul li ul li {
+nav .collapse .navbar-nav .nav-item ul li {
   border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  list-style: none;
+  border-left: 3px solid #8DC63F;
 }
 
-nav div ul li:hover ul {
+nav .collapse .navbar-nav .nav-item:hover ul {
   opacity: 1;
   visibility: visible;
   background-color: #fff;
 }
 
-nav div input[type=Search] {
+nav .collapse input[type=Search] {
+  border: 2px solid #8DC63F;
+  width: 10rem;
+}
+
+nav .collapse .btn {
   border: 2px solid #8DC63F;
 }
 
-nav div .btn {
-  border: 2px solid #8DC63F;
-}
-
-nav div .btn:hover {
+nav .collapse .btn:hover {
   background-color: #8DC63F;
   border: 2px solid #12345678;
   color: #fff;
@@ -143,6 +154,7 @@ nav div .btn:hover {
   .info-sect .infor {
     display: inline-block;
     justify-content: center;
+    align-items: center;
   }
   .info-sect .infor li {
     display: inline-flex;
@@ -152,23 +164,32 @@ nav div .btn:hover {
     display: inline-flex;
     margin: 0 0 0 5.1rem;
     justify-content: center;
+    vertical-align: middle;
+  }
+  nav .logo {
+    width: 130px;
+  }
+  nav .collapse input[type=Search] {
+    width: 7rem;
   }
 }
 
 @media (max-width: 710px) {
   .info-sect {
     display: inline-block;
+    height: auto;
     text-align: center;
   }
   .info-sect .infor {
     display: inline-block;
   }
   .info-sect .media {
-    margin: .7rem 0;
+    margin: 0 0 .7rem 0;
     float: none;
+    vertical-align: middle;
   }
   .info-sect .btn {
-    margin: 0 0 1.5rem 0;
+    margin: 0 0 .7rem 0;
     float: none;
   }
 }
@@ -181,6 +202,8 @@ nav div .btn:hover {
   background: url("image/newsletter-bg.jpg");
   background-size: cover;
   background-repeat: no-repeat;
+  background-position: center center;
+  width: 100vw;
   height: 40vh;
   position: relative;
 }
@@ -209,6 +232,17 @@ nav div .btn:hover {
   background-color: #5DC269;
   border: none;
   border-radius: 3px;
+}
+
+@media (max-width: 768px) {
+  .nltr .mail {
+    width: 20rem;
+  }
+  .nltr .sub {
+    width: 5rem;
+    padding: 20px 0;
+    font-size: 12px;
+  }
 }
 
 /*-----end of Newslatters section-----*/
