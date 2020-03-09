@@ -84,67 +84,76 @@
 
 /*-----end of donation section-----*/
 /*-----start of navbar-----*/
-nav {
-  padding: 1rem;
+.navbar {
+  padding: 1.5rem 1rem;
 }
 
-nav .logo {
+.navbar .logo {
   display: inline-flex;
   width: 170px;
 }
 
-nav .collapse {
-  justify-content: flex-end;
+.navbar .collapse {
+  justify-content: center;
 }
 
-nav .collapse .navbar-nav .nav-item {
+.navbar .collapse .navbar-nav {
+  margin: auto;
+}
+
+.navbar .collapse .navbar-nav .nav-item {
   list-style: none;
   padding-left: 1rem;
 }
 
-nav .collapse .navbar-nav .nav-item:first-child {
+.navbar .collapse .navbar-nav .nav-item:first-child {
   padding-left: .6rem;
 }
 
-nav .collapse .navbar-nav .nav-item .nav-link {
+.navbar .collapse .navbar-nav .nav-item .nav-link {
   text-transform: uppercase;
   font-weight: 500;
-  color: #000;
+  color: #7f8c8d;
 }
 
-nav .collapse .navbar-nav .nav-item .nav-link:hover {
+.navbar .collapse .navbar-nav .nav-item .nav-link:hover {
   color: #8DC63F;
 }
 
-nav .collapse .navbar-nav .nav-item ul {
+.navbar .collapse .navbar-nav .nav-item ul {
   position: absolute;
   opacity: 0;
   visibility: hidden;
   z-index: 9999;
 }
 
-nav .collapse .navbar-nav .nav-item ul li {
+.navbar .collapse .navbar-nav .nav-item ul li {
   border-bottom: 1px solid rgba(255, 255, 255, 0.2);
   list-style: none;
   border-left: 3px solid #8DC63F;
 }
 
-nav .collapse .navbar-nav .nav-item:hover ul {
+.navbar .collapse .navbar-nav .nav-item:hover ul {
   opacity: 1;
   visibility: visible;
   background-color: #fff;
 }
 
-nav .collapse input[type=Search] {
+.navbar .collapse .form-inline input[type=Search] {
   border: 2px solid #8DC63F;
   width: 10rem;
+  margin: auto;
 }
 
-nav .collapse .btn {
+.navbar .collapse .form-inline ::placeholder {
+  text-align: center;
+}
+
+.navbar .collapse .form-inline .btn {
   border: 2px solid #8DC63F;
 }
 
-nav .collapse .btn:hover {
+.navbar .collapse .form-inline .btn:hover {
   background-color: #8DC63F;
   border: 2px solid #12345678;
   color: #fff;
@@ -167,10 +176,22 @@ nav .collapse .btn:hover {
     vertical-align: middle;
   }
   nav .logo {
-    width: 130px;
+    width: 160px;
   }
-  nav .collapse input[type=Search] {
-    width: 7rem;
+  nav .collapse .form-inline {
+    display: inline-flex;
+    width: 10rem;
+    float: right;
+  }
+  nav .collapse .form-inline input[type=Search] {
+    width: 6rem;
+    margin-bottom: .2rem;
+    justify-content: center;
+  }
+  nav .collapse .form-inline .btn {
+    display: inline-flex;
+    justify-content: center;
+    width: 100%;
   }
 }
 
@@ -191,6 +212,13 @@ nav .collapse .btn:hover {
   .info-sect .btn {
     margin: 0 0 .7rem 0;
     float: none;
+  }
+  nav .logo {
+    width: 180px;
+  }
+  nav .collapse .form-inline {
+    display: inline-flex;
+    width: 10rem;
   }
 }
 
@@ -218,7 +246,7 @@ nav .collapse .btn:hover {
 
 .nltr .mail {
   width: 30rem;
-  padding: 15px 0 15px 15px;
+  padding: 15px 15px;
   font-size: 16px;
   margin-right: 10px;
   border: none;
