@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel='stylesheet' href='https://cdn.rawgit.com/noelboss/featherlight/1.3.2/release/featherlight.min.css'>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <script src="script.js" defer></script>
+    <title>News</title>
+</head>
+<body>
+      <!---start of info section--->
+      <div class="info-sect">
+        <article class="infor">
+          <ul>
+            <li>
+              <i class="material-icons">phone_in_talk</i><span>+1123456789</span>
+            </li>
+            <li>
+              <i class="material-icons">mail_outline</i><span>exemple@exemple.com</span>
+            </li>
+          </ul>
+        </article>
+        <article class="media">
+          <a href="#">
+            <i class="fa fa-facebook"></i>
+          </a>
+          <a href="#">
+            <i class="fa fa-linkedin"></i>
+          </a>
+          <a href="#">
+            <i class="fa fa-twitter"></i>
+          </a>
+        </article>
+        <article class="botn">
+          <button class="btn" type="button" name="button" data-featherlight="#form">Donate Now</button>
+        </article>
+      </div>
+    
+      <!---end of info section--->
+      <!---start of donation section--->
+    
+      <div id="intro">
+        <!-- <h3>Donate via Credit Card</h3> -->
+        <!-- <a href="#" class="btn btn-primary" data-featherlight="#form">Donate</a> -->
+        <!-- </hr> -->
+        <!-- <h3>Donate via Paypal</h3> -->
+        <!-- <script src="https://www.paypalobjects.com/js/external/paypal-button.min.js?merchant=YOUR_MERCHANT_ID" data-button="donate" data-amount="1.00" async></script> -->
+        <div id="hidden-element">
+          <div id="form">
+            <script src="https://cdn.donately.com/dntly-core/1.4/core.min.js" data-donately-id="act_ba7d12ab27bb" data-stripe-publishable-key="pk_test_rf2QE7E6grzUBoQfN8OppOpy"></script>
+          </div>
+        </div>
+      </div>
+    
+      <!---end of donation section--->
+    
+      <!-- Navigation bar here -->
+    
+      <!---start of navbar--->
+      <nav class="navbar navbar-expand-md navbar-light">
+        <img class="logo" src="img/logo21.png" alt="logo">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+    
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ">
+            <li class="nav-item active">
+              <a class="nav-link" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="">Projects</a>
+            </li>
+            <li class="nav-item"><a class="nav-link" href="">News</a>
+              <ul>
+                <li><a class="nav-link" href="">Events calendar</a></li>
+                <li><a class="nav-link" href="">Newslatters</a></li>
+                <li><a class="nav-link" href="">Image galleries</a></li>
+                <li><a class="nav-link" href="">News articles</a></li>
+              </ul>
+            </li>
+            <li class="nav-item"><a class="nav-link" href="#">About</a>
+              <ul>
+                <li><a class="nav-link" href="">Mission, vision and History</a></li>
+                <li><a class="nav-link" href="">FAQ</a></li>
+                <li><a class="nav-link" href="">Staff</a></li>
+                <li><a class="nav-link" href="">Annual reports</a></li>
+                <li><a class="nav-link" href="">Partners</a></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Contact</a>
+            </li>
+          </ul>
+    
+          <form class="form-inline">
+            <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-light my-sm-0" type="submit">Search</button>
+          </form>
+    
+        </div>
+      </nav>
+  <!---end of info navbar--->
+
+
+    <!------- section news latter------------->
+    <section class="sect1">   
+      <div class="contain1">
+                <div class="descript">
+                    <h1>Registration Form</h1>
+                    <h6>Please fill in the form before.</h6>
+                </div>
+        
+        
+        <div class="formulaire1">
+            <div class="contain2">
+                <h4>Full Name</h4>
+                <input class="input1" type="text" name="" placeholder="Prefix">
+                <input class="input2" type="text" name="" placeholder="First Name">
+                <input class="input3" type="text" name="" placeholder="Last Name">
+            </div>
+            <div class="contain3">      
+                <h4>Phone Number</h4>
+                <input class="input4 type="number" name="" placeholder="Area Code">
+                <input class="input5 type="number" name="" placeholder="Phone Number">
+                
+            </div> 
+            <div class="contain4">   
+                <h4>Email</h4>
+                <input class="input6" type="email" name="" placeholder="ex:green_fund@gmail.com">
+            </div>      
+        </div>
+        <div class="formulaire2">
+            <div class="contain5">
+               <h3>Billing Address</h3>
+               <input class="input7" type="text" name="" placeholder="Street Adress"><br>
+               <input class="input8" type="text" name="" placeholder="Street Adress Line 2"><br>
+               <input class="input9" type="text" name="" placeholder="city">
+               <input class="input10" type="text" name="" placeholder="State/Province">  
+               <input class="input11" type="text" name="" placeholder="Postal Code">
+            
+            <select class="contain6">
+                <option value="">Please Select</option>
+                <option value="">Australia</option>
+                <option value="">Argentina</option>
+                <option value="">Brazil</option>
+                <option value="">Bolivia</option>
+                <option value="">Cameroon</option>
+                <option value="">Canada</option>
+                <option value="">Colombia</option>
+                <option value="">China</option>
+                <option value="">Denmark</option>
+                <option value="">Djibouti</option>
+                <option value="">Emirat</option>
+                <option value="">Egypt</option>
+                <option value="">Germany</option>
+                <option value="">India</option>
+                <option value="">Indonesia</option>
+                <option value="">Italy</option>
+                <option value="">Lebanon</option> 
+                <option value="">Malysia</option>
+                <option value="">Morocco</option>
+                <option value="">Syria</option>
+                <option value="">Vanada</option>
+                
+            </select>
+            
+        </div>
+            <hr>
+            <input class="btn-in"type="button" name="button" value="Register Now">
+        </div>
+      </div>
+    </section>  
+    
+    <!---start of Newslatters section--->
+    <section class="nltr">
+      <form class="formule" action="index.html" method="post">
+        <input class="mail" type="email" name="nlt" placeholder="Please enter you email" value="" required>
+        <input class="sub greennature-button" type="submit" name="" value="SUBSCRIBE">
+      </form>
+    </section>
+    <!---end of Newslatters section--->
+    
+    <!-----------------start of footer------------------>
+    <div class="container_footer">
+      <div class="footer_art">
+          <img class="img_logo" id="logo"  src="img/logo21.png" alt="">
+          <p class="textt">Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt, perspiciatis!<br>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt, perspiciatis!<br>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt, perspiciatis!<br>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt, perspiciatis!<br>
+          </p>
+          <div class="imgg">
+          <img src="img/facebook.png" alt="">
+          <img src="img/twitter.png" alt="">
+          <img src="img/youtube.png" alt="">
+          <img src="img/twitter.png" alt="">
+          </div>
+  </div>
+  <div class="footer_art">
+      <h1>QUICK LINKS</h1>
+      <ul>
+          <li>> Nature Adds Value to Your Future.</li>
+          <li>> Wood Work Adds Value to Your.</li>
+          <li>> Wood Work Gives Value to Your.</li>
+          <li>> Wood Work Gives Value to Your.</li>
+          <li>> Nature Gives Happy Life.</li>
+          <li>> Save Wild Life Animals.</li>
+      </ul>
+  </div>
+  <div class="footer_art">
+      <h1>OUR PROJECT</h1>
+      <ul>
+          <li>> Recycling</li>
+          <li>> Water Saving</li>
+          <li>> Solar System</li>
+          <li>> Waste Management</li>
+          <li>> Planting</li>
+          <li>> Save Wild Life</li>
+      </ul>
+  </div>
+  <div class="footer_art">
+      <h1>GET IN TOUCH</h1> 
+      <ul>
+          <li><img class="cord" src="img/adress.png" alt="">GREEN FUND<br>Street salam youssofia,morocco</li>
+          <li><img class="cord" src="img/call.png" alt="">+212661610101</li>
+          <li><img class="cord" src="img/gmail.png" alt="">contact@greenfund.com</li>
+          <li><img class="cord" src="img/clock1.png"alt="">Monday - Friday:8.00 - 19.00</li>
+      </ul>
+  </div>
+  </div>
+  <div class="footer_copyright">
+      <div class="cop1"><p>Copyright © Green Fund2020.All rights reserved.</p></div>
+      <div class="cop2"><p>Created by: theme-Champion</p></div>
+  </div>
+</body>
+</html>
