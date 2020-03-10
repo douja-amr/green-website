@@ -84,16 +84,19 @@
 
 /*-----end of donation section-----*/
 /*-----start of navbar-----*/
-nav{
-  padding: 1rem;
+.navbar{
+  padding: 1.5rem 1rem;
+  // height: 90px;
 
   .logo{
     display: inline-flex;
     width: 170px;
   }
   .collapse{
-    justify-content: flex-end;
+    justify-content: center;
+    // margin: auto;
     .navbar-nav{
+      margin: auto;
       .nav-item{
           list-style: none;
           padding-left: 1rem;
@@ -103,7 +106,7 @@ nav{
           .nav-link{
             text-transform: uppercase;
             font-weight: 500;
-            color: #000;
+            color: #7f8c8d;
             &:hover{
               color: #8DC63F;
             }
@@ -129,9 +132,17 @@ nav{
           }
       }
     }
+    .form-inline{
+      // display: inline-flex;
+      // justify-items: flex-end;
+      // margin: auto;
     input[type=Search]{
       border: 2px solid #8DC63F;
       width: 10rem;
+      margin: auto;
+    }
+    ::placeholder{
+      text-align: center;
     }
     .btn{
       border: 2px solid #8DC63F;
@@ -139,6 +150,7 @@ nav{
         background-color: #8DC63F;
         border: 2px solid #12345678;
         color: #fff;
+        }
       }
     }
   }
@@ -165,11 +177,24 @@ nav{
    }
    nav{
    .logo{
-     width: 130px;
+     width: 160px;
      }
      .collapse{
+       .form-inline{
+         display: inline-flex;
+         width: 10rem;
+         float: right;
      input[type=Search]{
-       width: 7rem;
+       width: 6rem;
+       margin-bottom: .2rem;
+       justify-content: center;
+       }
+       .btn{
+          display: inline-flex;
+          justify-content: center;
+          width: 100%;
+
+         }
        }
      }
    }
@@ -194,6 +219,18 @@ nav{
       margin: 0 0 .7rem 0;
       float: none;
     }
+  }
+  nav{
+  .logo{
+    width: 180px;
+    }
+    .collapse{
+      .form-inline{
+        display: inline-flex;
+        width: 10rem;
+        // justify-content: flex-end;
+        }
+      }
   }
 }
 /*-----end of navbar-----*/
@@ -341,7 +378,7 @@ nav{
   }
   .mail{
     width: 30rem;
-    padding: 15px 0 15px 15px;
+    padding: 15px 15px;
     font-size: 16px;
     margin-right: 10px;
     border: none;
