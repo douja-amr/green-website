@@ -56,7 +56,7 @@
 
 .botn .btn {
   display: inline-block;
-  float: right;
+  /* float: right; */
   background-color: #8DC63F;
   border: 2px solid #8DC63F;
   color: #fff;
