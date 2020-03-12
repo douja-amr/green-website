@@ -1,0 +1,128 @@
+body{
+  background: url("image/background_6.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+
+}
+
+@import "nav.scss";
+
+.new_raport{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-column-gap: 50px;
+  grid-row-gap: 20px;
+  margin: 10px 93px 20px 93px;
+
+  .page_title{
+    grid-area: 1 / 1 / 2 / span 2;
+    font-size: 2rem;
+
+  }
+  .about_raport{
+    // width: 85%;
+    // text-align: center;
+    // height: 100%;
+    p{
+      margin-top: .7rem;
+      margin-bottom: 2rem;
+    }
+  }
+  .get_raport{
+    background-color: #999999;
+    color: #fff;
+    padding: 13px;
+    border-radius: 12px;
+    text-decoration: none;
+  }
+  .last_pic{
+    width: 100%;
+    border-radius: 15px;
+    height: 21rem;
+  }
+}
+
+.ancient_raports{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-column-gap: 20px;
+  grid-row-gap: 20px;
+  width: 85%;
+  margin: 2.5rem auto .7rem auto;
+  .past_reports{
+    grid-area: 1 / 1 / 2 / span 3;
+  }
+  .raport{
+
+    .pic{
+
+      img{
+        width: 100%;
+        border-radius: 15px;
+
+      }
+    }
+    .down{
+        margin: 15px 0;
+      .raport_link{
+        border: 1.5px solid #12345678;
+        border-radius: 10px;
+        text-decoration: none;
+        color: #000;
+        padding: 10px;
+        &:hover{
+          background-color: #8DC63F;
+          color: #fff;
+          border: 2px solid #999999;
+          font-weight: bold;
+        }
+      }
+    }
+    .raport_title{
+      color: red;
+      margin: 1.1rem 0 1.4rem 0;
+    }
+  }
+}
+
+
+@media (max-width: 922px){
+  .new_raport{
+    display: grid;
+    grid-template-columns: 1fr;
+
+  .page_title{
+    grid-area: 1 / 1 / 2 / 2;
+    font-size: 2rem;
+
+  }
+
+  .last_pic{
+    grid-area: 2 / 1 / 3 / 2;
+    width: 100%;
+    height: 21rem;
+
+    }
+  }
+  .ancient_raports{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+    .past_reports{
+      grid-area: 1 / 1 / 2 / 3;
+    }
+
+  }
+}
+@media (max-width: 650px){
+  .ancient_raports{
+    display: grid;
+    grid-template-columns: 1fr;
+
+    .past_reports{
+      grid-area: 1 / 1 / 2 / 2;
+    }
+
+  }
+}
