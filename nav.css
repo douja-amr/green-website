@@ -329,5 +329,17 @@
   }
 }
 
-/*-----end of Newslatters section-----*/
+@media (max-width: 480px) {
+  .nltr {
+    background: url(image/newsletter-bg.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    width: 100vw;
+    height: 40vh;
+    position: relative;
+    top: 888px;
+  }
+  /*-----end of Newslatters section-----*/
+}
 /*# sourceMappingURL=nav.css.map */

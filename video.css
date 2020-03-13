@@ -16,7 +16,6 @@ body {
   text-transform: uppercase;
   letter-spacing: .5em;
   display: inline-block;
-  border: 4px double rgba(255, 255, 255, 0.25);
   border-width: 4px 0;
   padding: 1.5em 0em;
   position: absolute;
@@ -26,6 +25,7 @@ body {
   margin: 0 0 0 -20em;
   z-index: 99;
   color: #fff;
+  /* Animate Background Image */
 }
 
 .content_video_p span {
@@ -45,20 +45,8 @@ body {
   /* Activate hardware acceleration for smoother animations */
   -webkit-transform: translate3d(0, 0, 0);
   -webkit-backface-visibility: hidden;
-  /* Clip Background Image */
-  background: url(animated_text_fill2.png) repeat-y;
-  background-color: red;
-  -webkit-background-clip: text;
-  background-clip: text;
-  /* Animate Background Image */
-  -webkit-text-fill-color: transparent;
-  -webkit-animation: aitf 80s linear infinite;
-  /* Activate hardware acceleration for smoother animations */
-  -webkit-transform: translate3d(0, 0, 0);
-  -webkit-backface-visibility: hidden;
 }
 
-/* Animate Background Image */
 @-webkit-keyframes aitf {
   0% {
     background-position: 0% 50%;
@@ -68,21 +56,45 @@ body {
   }
 }
 
-.content_video {
-  position: relative;
+.content_video_p .content_video video {
+  position: absolute;
   bottom: 0;
+  /* background-color: rgb(76, 209, 55 , .9); */
+  background-image: url(vert.jpg);
   width: 100%;
   height: 100%;
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
-.strongp {
+.content_video_p .content_video_p strong {
   font-weight: 700;
-  color: red;
+  color: #030303;
   font-size: 30px;
   display: block;
   text-transform: uppercase;
-  text-shadow: 2px 2px #1612f1;
   color: #fff;
+}
+
+.content_video_p .video.bcg video {
+  z-index: -1;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+@media (max-width: 480px) {
+  .content_video_p span {
+    display: none;
+  }
+  #myVideo {
+    position: relative;
+    width: 100%;
+    -o-object-fit: fill;
+       object-fit: fill;
+    height: 100%;
+    top: 58rem;
+  }
 }
 /*# sourceMappingURL=video.css.map */

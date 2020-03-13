@@ -193,7 +193,7 @@ padding: 10px;
   text-align: center;
 }
 
-@media  (max-width: 500px) {
+@media  (max-width: 480px) {
   .card- {
     display: grid;
     grid-template-columns: 1fr 1fr ;
@@ -203,11 +203,11 @@ padding: 10px;
     grid-gap: 0.5em;
     margin-left: 1em;
     margin-right: 1em;
-    height: 735px;
+    height: 600px;
     /* padding-top: 5em;
     padding-bottom: 5em; */
    
-    height: 300px;
+    // height: 300px;
   }
   .card-1 {
     grid-column: 1 / span 1;

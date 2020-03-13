@@ -79,4 +79,16 @@ body{
         width: 100%;
         height: 100%;
       }
-    
+  }
+  @media  (max-width: 480px){
+    .content_video_p span {
+      display: none;
+    }
+    #myVideo {
+      position: relative;
+      width: 100%;
+      object-fit: fill;
+     height: 100%;
+     top: 58rem;
+    }
+  }

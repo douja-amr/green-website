@@ -1,0 +1,344 @@
+/************* variable ***********/
+$primary-vert:  #6AB43E;
+$primary-gris: rgb(145, 145, 145);
+$primary-noir: black;
+$polices: Verdana, Geneva, Tahoma, sans-serif;
+
+/******************** Mixin of the second section*****************/
+@mixin arti-img{
+    width: 260px;
+    heiGht: 220px;
+}
+@mixin arti-h6{
+    font-family: $polices;
+    font-size: 18px;
+    color: $primary-noir;
+    margin-top: 22px;
+}
+@mixin arti-p{
+    font-family: $polices;
+    font-size: 12px;
+    margin-right: 53px;
+    text-align: left;
+    color: $primary-gris;
+}
+
+/***************sec***************/
+.secct{
+    margin-top: 50px;
+    margin-left: 80px;
+    margin-right: 60px;
+    h5{
+        font-size: 35px;
+        color: #8DC63F;
+        font-family: sans-serif;
+    }
+}
+.containnrr{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 1fr;
+    grid-gap: 10px;
+    height: 15px;
+}
+.articl1, .articl2, .articl3, .articl4{
+   img{
+    @include arti-img;
+   }
+   h6{
+    @include arti-h6;
+   }
+   P{
+    @include arti-p;
+   }
+   hr{
+       
+       width: 85%;
+       margin-left: 5px;
+       height: 5px;
+   }
+   .adimg{
+       width: 10px;
+       height: 10px;
+       margin-left: -16px;
+       margin-bottom: -35px;
+   }
+   .cmntimg{
+       width: 10px;
+       height: 10px;
+       margin-left: -14px;
+       margin-bottom: -38px;
+    }
+    .admin{
+        float: left;
+        margin-top: -40px;
+        margin-left: 28px;
+    }
+    .commentaire{
+        float: right;
+        margin-top: -40px;
+        margin-right: -12px;
+    }
+}
+ /************ Media Query "Ipad" second section***************/ 
+ @media screen and(max-width: 767px){
+    .secct{
+        margin-left: 50px;
+        position: relative;
+        top: -2rem;
+       .containnrr{
+           grid-template-columns: repeat(2, 1fr);
+           grid-column-gap: 20px;
+           .art1, .art2, .art3, .art4{
+               img{
+                width: 320px;
+                height: 300px;
+               }
+               h6{
+                   font-size: 10px;
+               }
+               p{
+                   font-size: 14px;
+                   margin-right: 70px;
+               }
+           }
+       }
+    }
+}
+ /************ Media Query "phone" second section***************/ 
+ @media screen and (max-width: 480px) {
+    .secct{
+       margin-right: (20 10 10 20);
+        h5{
+            font-size: 20px;
+        }
+        .containnrr{
+           grid-template-columns: repeat(1, 1fr);
+           .articl1, .articl2, .articl3, .articl4{
+               img{
+                   width: 400px;
+                   heiGht: 300px;                
+               }
+               h6{
+                   font-size: px;
+               }
+               p{
+                   font-size: 15px;
+               }
+               hr{
+                width: 90%;
+                margin-left: 5px;
+                height: 5px;
+               }
+               
+               .admin{
+                float: left;
+                margin-top: -40px;
+                margin-left: 28px;
+               }
+               .adimg{
+                width: 10px;
+                height: 10px;
+                margin-left: -16px;
+                margin-bottom: -48px;
+               }
+               .commentaire{
+                float: right;
+                margin-top: -40px;
+                margin-right: -12px;
+               }
+               .cmntimg{
+                width: 10px;
+                height: 10px;
+                margin-left: -14px;
+                margin-bottom: -50px;
+             }
+           }
+        }
+    }
+}
+
+/*-------footer--------*/
+body{
+    margin:0;
+  }
+  .container_footer{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px,1fr));
+    overflow: hidden;
+  }
+  .footer_art{
+    justify-self: center;
+    position: relative;
+    top: 1rem;
+  }
+  .footer_art li{
+    list-style: none;
+    color:white;
+  }
+  .footer_art p{
+   
+    color:white;
+    margin-left: 10px;
+    margin-top: 0;
+  }
+  .footer_art h1{
+    text-align: center;
+    font-size: 25px;
+    color:white;
+    padding-top: 30px;
+  }
+  .imggg{
+    width: 60%;
+    display: flex;
+    justify-content: space-evenly;
+    margin-left: 50px;
+    margin-bottom:10px ;
+  }
+  .footer_art ul li{
+    margin-top: 10px;
+  } 
+  .container_footer{
+    background-image: url(image/foter.jpg);
+    padding-top: 29px;
+    padding-bottom: 30px;
+    position: relative;
+    top: 25rem;
+  }
+  .footer_copyright{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background-color:#F7F7F7;
+    position: relative;
+    top: 25rem;
+  }
+  .cop1{
+    justify-self: start;
+    padding-left: 15px;
+  }
+  .cop2{
+    justify-self: end;
+    padding-right: 20px;
+  }
+  .cop1, .cop2 p{
+    font-size: 20px;
+  }
+  .cord1{
+    height: 30px;
+    width: 33px;
+    padding: 5px;
+  }
+  
+  #logo{
+    height: 60px;
+    width: 200px;
+    padding: 10px 0 0 30px;
+  }
+  .footter_are_list{
+    margin-top: 35px;
+  }
+  
+  body{
+    margin:0;
+}
+.container_footer{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px,1fr));
+    overflow: hidden;
+}
+.footer_art{
+    justify-self: center;
+
+}
+.footer_art li{
+    list-style: none;
+    color:white;
+}
+.footer_art p{
+
+    color:white;
+    margin-left: 10px;
+    margin-top: 0;
+}
+.footer_art h1{
+    text-align: center;
+    font-size: 25px;
+    color:white;
+    padding-top: 30px;
+}
+.imggg{
+    width: 60%;
+    display: flex;
+    justify-content: space-evenly;
+    margin-left: 50px;
+    margin-bottom:10px ;
+}
+.footer_art ul li{
+    margin-top: 10px;
+} 
+.container_footer{
+    background-image: url(image/foter.jpg);
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.footer_copyright{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background-color:#F7F7F7;
+}
+.cop1{
+    justify-self: start;
+    padding-left: 15px;
+}
+.cop2{
+    justify-self: end;
+    padding-right: 20px;
+}
+.cop1, .cop2 p{
+    font-size: 20px;
+}
+
+#logo{
+    height: 70px;
+    width: 200px;
+    padding: 10px 0 0 30px;
+}
+.footer_art4 ul li img{
+   height: 18px;
+   width: 18px;
+   margin-right: 10px;
+}
+.footter_are_list{
+    margin-top: 35px;
+}
+
+@media (max-width:767px) {
+    .footer_copyright .cop1,
+    .footer_copyright .cop2 p{
+        font-size: 13px;
+        
+    }
+    .footer_copyright{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        background-color:#F7F7F7;
+        position: relative;
+        top: 46rem;
+    }
+    .container_footer {
+        position: relative;
+        top: 46rem;
+    }
+
+}
+@media (max-width:480px){
+    .secct {
+        display:none
+    }
+}
+  /*------- end footer--------*/
+
+  

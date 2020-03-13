@@ -19,4 +19,23 @@
   width: 100%;
   overflow: hidden;
 }
+
+@media (max-width: 480px) {
+  #sliderchow {
+    position: relative;
+    width: 100%;
+    -o-object-fit: fill;
+       object-fit: fill;
+    height: 100%;
+    top: 56rem;
+  }
+  #part-title {
+    text-align: center;
+    margin-top: 20px;
+    color: #111010;
+    font-size: 20px;
+    position: relative;
+    top: 57rem;
+  }
+}
 /*# sourceMappingURL=slidepartners.css.map */
