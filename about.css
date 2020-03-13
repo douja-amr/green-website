@@ -327,7 +327,7 @@ body, h1{
 .about{
     margin: Auto auto;
     color:#8DC63F;
-    background-image: url(nature.jpg);
+    background-image: url(image/nature.jpg);
     height: 300px;
 }
 .about_h1{
@@ -369,7 +369,7 @@ body, h1{
 .article2 p{
     padding-left: 30px;
 }
-h4{
+.article2 h4{
     padding-left: 30px;
 }
 .article2{
@@ -459,7 +459,7 @@ list-style: none;
 }
 .nature2{
     margin: Auto auto;
-    background-image: url(nature7.jpg);
+    background-image: url(image/nature7.jpg);
     background-size: cover;
     height: 480px;
     width:100%;
@@ -485,14 +485,14 @@ list-style: none;
     .Choose_4 { grid-area: 2 / 2 / 3 / 3; }
     .people{
     margin: Auto auto;
-    background-image: url(ntr22.png);
+    background-image: url(image/ntr22.png);
     background-size: cover;
     height: 480px;
     width:100%;
     }
-    /* .choose_hov h5:hover{
+    .choose_hov h5:hover{
       color:#8DC63F ;
-    } */
+    }
 .what_People_say{
   text-align: center;
   padding-top:30px;
@@ -500,7 +500,7 @@ list-style: none;
 }
 .what_People{
     width: 100%;
-    background-image: url(nature9.jpg);
+    background-image: url(image/nature9.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     height: 600px;
