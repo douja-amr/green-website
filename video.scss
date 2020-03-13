@@ -1,0 +1,82 @@
+body{
+    padding: 0;
+    margin: 0;
+  }
+  #myVideo {
+      position: relative;
+      width: 100%;
+      object-fit: fill;
+     height: 100%;
+    }
+  .content_video_p {
+    text-align: center;
+      text-transform: uppercase;
+      letter-spacing: .5em;
+      display: inline-block;
+      border-width: 4px 0;
+      padding: 1.5em 0em;
+      position: absolute;
+      top: 500%;
+      left: 630px;
+      width: 40em;
+      margin: 0 0 0 -20em;
+      z-index: 99;
+      color: #fff;
+  
+      span {
+        font: 700 4em/1 "Oswald", sans-serif;
+        letter-spacing: 0;
+        padding: .25em 0 .325em;
+        display: block;
+        margin: 0 auto;
+        text-shadow: 0 0 80px rgba(255, 255, 255, 0.5);
+        /* Clip Background Image */
+        background: url(animated_text_fill1.png) repeat-y;
+        -webkit-background-clip: text;
+        background-clip: text;
+        /* Animate Background Image */
+        -webkit-text-fill-color: transparent;
+        -webkit-animation: aitf 80s linear infinite;
+        /* Activate hardware acceleration for smoother animations */
+        -webkit-transform: translate3d(0, 0, 0);
+        -webkit-backface-visibility: hidden;
+      }
+      
+      /* Animate Background Image */
+      @-webkit-keyframes aitf {
+        0% {
+          background-position: 0% 50%;
+        }
+        100% {
+          background-position: 100% 50%;
+        }
+      }
+  
+      .content_video  video{
+        position: absolute;
+        bottom: 0;
+        /* background-color: rgb(76, 209, 55 , .9); */
+        background-image: url(vert.jpg);
+        width: 100%;
+        height: 100%;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+      }
+      
+      
+      .content_video_p strong {
+        font-weight: 700;
+        color: rgb(3, 3, 3);
+        font-size: 30px;
+        display: block;
+        text-transform: uppercase;
+        color: #fff;
+      }
+      .video.bcg video{
+        z-index: -1;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+      }
+    

@@ -1,0 +1,343 @@
+/*variable*/
+$primary-orange: #fe9801;
+$primary-vert:  #6AB43E;
+$primary-blanc: #ffffff;
+$primary-gris: rgb(145, 145, 145);
+$polices: Verdana, Geneva, Tahoma, sans-serif;
+$marge-gauche: 60px;
+/************** Mixin of the first section **************/
+@mixin property-arcl{
+    background-size: cover;
+    border-radius: 10px;
+    height: 415px;
+    margin-left: 45px;
+    margin-top: 50px;
+    color: $primary-blanc;
+    margin-right: 50px;
+    opacity: .80;
+}
+@mixin property-img{
+    width: 100%;
+    height: 70%;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    z-index: -1;
+}
+@mixin proprety-h1{
+    font-family: $polices;
+    margin-top: 55px;
+    margin-left: $marge-gauche;
+    font-size: 30px;
+}
+@mixin property-btn{
+    margin-left: $marge-gauche;
+    margin-top: 10px;
+    border-radius: 10px;
+    padding: 4px;
+    height: 38px;
+    width: 130px;
+    border: none;
+}
+@mixin property-p{
+    font-family: $polices;
+    font-size: 15px;
+    margin-left: $marge-gauche;
+    margin-right: 60px;
+    text-align: justify;
+    color: $primary-blanc;
+}
+/******************** Mixin of the second section*****************/
+@mixin arti-img{
+    width: 260px;
+    heiGht: 220px;
+}
+@mixin arti-h3{
+    font-family: $polices;
+    font-size: 23px;
+    color: $primary-vert;
+}
+@mixin arti-h6{
+    font-family: $polices;
+    font-size: 10px;
+    color: $primary-gris;
+}
+@mixin arti-p{
+    font-family: $polices;
+    font-size: 12px;
+    margin-right: 53px;
+    text-align: left;
+}
+/***************************Section 3***********************/
+.containerr{
+    background: url(image/155.jpg) no-repeat;
+    background-size: cover;
+    height: 550px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.article1{
+    background: url(image/donate.png) no-repeat;
+    opacity: .7;
+    @include property-arcl;   
+}
+.article2{
+    background: url(image/act11.png) no-repeat;
+    @include property-arcl;
+}
+.article1{
+    img{
+        @include property-img;   
+    }
+    .wrappar:hover img{
+        opacity: .75;
+    }
+    h1{
+        color: $primary-orange;
+        @include proprety-h1;
+    }
+    h4{    
+        color: $primary-blanc;
+        font-family: $polices;
+        margin-left: $marge-gauche;
+    }
+    hr{
+        margin-left: $marge-gauche;
+    }
+    p{
+        @include property-p;
+    }
+    .btn1{
+        background-color: $primary-orange;
+        border-color: $primary-orange;
+        @include property-btn;
+    }
+    .btn1:hover{
+        background-color: rgb(250, 156, 79);
+    }
+}
+.article2{ 
+    img{
+       @include property-img;
+    }
+
+    h1{
+        color: $primary-vert;
+        @include proprety-h1;
+    }
+    h4{
+        color: $primary-blanc;
+        font-family: $polices;
+        margin-left: $marge-gauche;
+    }
+    hr{
+        margin-left: $marge-gauche;
+    }
+    p{
+        @include property-p;
+    }
+    .btn2{
+        @include property-btn;
+        background-color: $primary-vert;
+        border-color: $primary-vert;
+    }
+    .btn2:hover{
+        background-color: rgb(122, 248, 122);
+    }
+}
+/******************Media query version Ipad*****************/
+
+@media screen and (max-width: 767px){
+    .containerr{
+        .article1, .article2{
+            h1{
+                margin-top: 16px;
+                margin-left: 20px;
+                font-size: 19px;
+            }
+            h4{
+                margin-left: 12px;
+                font-size: 19px;
+            }
+            hr{
+                margin-left: 16px;
+            }
+            p{
+                font-size: 13px;
+                margin-left: 20px;
+                margin-right: 20px;
+                text-align: left;
+                margin-bottom: 5px;
+            }
+        }
+    }
+    }
+    /****************** vesion mobile *****************/
+ @media screen and (max-width: 480px){
+    .containerr{
+        grid-template-columns: 1fr;
+        height: 770px;
+    .article1, .article2{
+        margin-top: 15px;
+        height: 345px;
+    }
+    }
+ }
+ /***********************Section 4***********************/
+ .sec{
+    margin-top: 50px;
+    margin-left: 80px;
+    margin-right: 60px;
+    h5{
+        font-size: 35px;
+    }
+}
+.contain{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 1fr;
+    height: 15px;
+}
+.art1, .art2, .art3, .art4{
+   img{
+    @include arti-img;
+   }
+   h3{
+    @include arti-h3;
+   }
+   h6{
+    @include arti-h6;
+   }
+   P{
+    @include arti-p;
+   }
+}
+// .art2{
+//     img{
+//         @include arti-img;
+
+//     }
+//     h3{
+//         @include arti-h3;
+//     }
+//     h6{
+//         @include arti-h6;
+//     }
+//     P{
+//         @include arti-p;
+//     }
+//  }
+//  .art3{
+//     img{
+//         @include arti-img;
+//     }
+//     h3{
+//         @include arti-h3;
+//     }
+//     h6{
+//         @include arti-h6;
+//     }
+//     P{
+//         @include arti-p;
+// }
+    
+//  }
+//  .art4{
+//     img{
+//         @include arti-img;
+//     }
+//     h3{
+//         @include arti-h3;
+//     }
+//     h6{
+//         @include arti-h6;
+//     }
+//     P{
+//        @include arti-p;
+//     }
+// }
+.btn3{
+    float: right;
+    width: 75px;
+    height: 28px;
+    font-size: 11px;
+    margin-top: 32%;
+    border-color: #f9faf9 ;
+    background-color: $primary-vert;
+    margin-bottom: 40px;
+}
+.btn3:hover{
+    background-color: #89b683;
+}
+ 
+ /************ Media Query "Ipad" second section***************/ 
+ @media screen and (max-width: 767px){
+    .sec{
+        margin-left: 50px;
+
+       .contain{
+           grid-template-columns: repeat(2, 1fr);
+           grid-column-gap: 25px;
+           .art1, .art2, .art3, .art4{
+               img{
+                width: 300px;
+                height: 280px;
+
+               }
+               h3{
+                   margin-top: 10px;
+               }
+               h6{
+                   font-size: 13px;
+               }
+               p{
+                   font-size: 14px;
+                   margin-right: 70px;
+               }
+           }
+       }
+       .btn3{
+          width: 58px;
+          height: 22px;
+          font-size: 8px;
+          margin-top: 302vh;
+          margin-right: -22px;
+        }
+}
+ /************ Media Query "phone" second section***************/ 
+ @media screen and (max-width: 480px) {
+    .sec{
+       margin-left: 10px;
+        h5{
+            font-size: 20px;
+        }
+        .contain{
+           grid-template-columns: repeat(1, 1fr);
+           margin-left: 55px;
+           .art1, .art2, .art3, .art4{
+               img{
+                   width: 350px;
+                   heiGht: 250px;                
+               }
+               h3{
+                   font-size: 25px;
+               }
+               h6{
+                   font-size: 15px;
+               }
+               p{
+                   font-size: 18px;
+               }
+           }
+        }
+    }
+    }
+    .btn3{
+        width: 58px;
+        height: 22px;
+        font-size: 8px;
+        margin-top: 640vh;
+        margin-right: -22px;
+      }
+ 
+}
