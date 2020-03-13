@@ -71,7 +71,6 @@
 
 .botn .btn {
   display: inline-block;
-  float: right;
   background-color: #8DC63F;
   border: 2px solid #8DC63F;
   color: #fff;
@@ -288,6 +287,7 @@
   width: 100vw;
   height: 40vh;
   position: relative;
+  margin-top: 71vh;
 }
 
 .nltr .formule {
