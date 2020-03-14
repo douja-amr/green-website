@@ -2,7 +2,7 @@ $primary-blanc: #ffffff;
 $primary-taille: 25px;
 @mixin property{
     margin-right: 10px;
-    height: 28px; 
+    height: 28px;
 }
 
 *{
@@ -221,7 +221,7 @@ box-sizing: border-box;
       margin-right: 10px;
       border: none;
       border-radius: 3px;
-  
+
     }
     .sub{
       width: 7rem;
@@ -232,10 +232,10 @@ box-sizing: border-box;
       border-radius: 3px;
     }
   }
-  
+
   @media (max-width: 768px){
     .nltr{
-  
+
       .mail{
         width: 20rem;
       }
@@ -310,11 +310,11 @@ h4{
 .input2{
     width: 120px;
     @include property;
-}   
+}
 .input3{
     width: 190px;
     @include property;
-}   
+}
 .input4{
     width: 100px;
     @include property;
@@ -332,7 +332,7 @@ h4{
     margin-top: 50px;
     margin-left: 85px;
     color: $primary-blanc;
-}    
+}
 h3{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 15px;
@@ -426,10 +426,10 @@ hr{
     }
     .input9{
         width: 136px;
-    } 
+    }
     .input10{
         width: 168px;
-    } 
+    }
     .input11{
         width: 124px;
     }
@@ -438,7 +438,7 @@ hr{
     }
     btn-in {
         width: 64%;
-    }    
+    }
 }
 }
 /*****************Media query version Phone***********************/
@@ -449,7 +449,7 @@ hr{
         .descript {
             height: 70px;
             padding: 10px
-        }    
+        }
     }
     .formulaire1{
         display: list-item;
@@ -505,7 +505,7 @@ hr{
             height: 35px;
         }
         .input8{
-            width: 285px;    
+            width: 285px;
             height: 35px;
         }
         .input9{
@@ -523,7 +523,7 @@ hr{
         .contain6 {
             width: 130px;
             height: 38px;
-        }   
+        }
         hr{
             width: 250px;
         }
@@ -535,7 +535,7 @@ hr{
 
 /*-----start of Newslatters section-----*/
 .nltr{
-  background: url("img/newsletter-bg.jpg");
+  background: url("image/newsletter-bg.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
@@ -624,7 +624,7 @@ ul li a .adres{
   margin-left: 41px;
 }
 .container_footer{
-  background: url("img/foter.jpg");
+  background: url("image/foter.jpg");
   padding-top: 50px;
   padding-bottom: 30px;
 }
