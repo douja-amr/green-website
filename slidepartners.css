@@ -1,0 +1,41 @@
+#slide-containerchow {
+  height: 253px;
+  width: 100%;
+  margin: auto;
+  overflow: hidden;
+  /* background:#CCC; */
+}
+
+.slide_chow {
+  height: 250px;
+  float: left;
+  text-align: center;
+  line-height: 8em;
+  font-size: 30px;
+  margin-left: 8px;
+}
+
+#sliderchow {
+  width: 100%;
+  overflow: hidden;
+}
+
+@media (max-width: 480px) {
+  #sliderchow {
+    position: relative;
+    width: 100%;
+    -o-object-fit: fill;
+       object-fit: fill;
+    height: 100%;
+    top: 56rem;
+  }
+  #part-title {
+    text-align: center;
+    margin-top: 20px;
+    color: #111010;
+    font-size: 20px;
+    position: relative;
+    top: 57rem;
+  }
+}
+/*# sourceMappingURL=slidepartners.css.map */
